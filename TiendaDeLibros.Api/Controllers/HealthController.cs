@@ -6,7 +6,7 @@ namespace TiendaDeLibros.Api.Controllers;
 [Route("api/[controller]")]
 public sealed class HealthController : ControllerBase
 {
-    /// <summary>Reports that the API is running.</summary>
+    /// <summary>Indica que la API está en funcionamiento.</summary>
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult Get() => Ok(new { status = "ok" });
